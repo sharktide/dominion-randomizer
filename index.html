@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dominion Smart Randomizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Dominion Smart Randomizer</h1>
+
+  <section class="controls">
+    <h2>Choose Expansions</h2>
+    <label><input type="checkbox" id="dominion" checked /> Dominion</label>
+    <label><input type="checkbox" id="prosperity" checked /> Prosperity</label>
+    <label><input type="checkbox" id="plunder" checked /> Plunder</label>
+
+    <h2>Events & Traits</h2>
+    Events: <input type="number" id="eventCount" value="2" min="0" max="5" />
+    Traits: <input type="number" id="traitCount" value="2" min="0" max="5" />
+
+    <h2>Card Costs</h2>
+    $2: <input type="number" id="cost2" value="1" min="0" max="3" />
+    $3: <input type="number" id="cost3" value="2" min="0" max="5" />
+    $4: <input type="number" id="cost4" value="2" min="0" max="5" />
+    $5: <input type="number" id="cost5" value="3" min="0" max="6" />
+    $6: <input type="number" id="cost6" value="1" min="0" max="3" />
+    $7: <input type="number" id="cost7" value="1" min="0" max="2" />
+
+    <br/><br/>
+    <button onclick="generateKingdom()">🎲 Generate Kingdom</button>
+  </section>
+
+  <section id="output" class="results"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
