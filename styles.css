@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  background: #f8f8fa;
+  color: #333;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2em;
+  color: #2a2a88;
+}
+
+.controls label {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.results {
+  margin-top: 2rem;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
